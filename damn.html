@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Organization</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header nav {
+            margin-top: 10px;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            width: 100%;
+            height: 60vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
+        .main-content {
+            display: flex;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery-container {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .gallery-container .swiper-container {
+            height: 200px;
+        }
+        .details-bar {
+            padding: 10px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Charity Organization</h1>
+        <nav>
+            <a href="damn.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="servicepage.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image1.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="image2.jpg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="image3.jpg" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="image4.jpg" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="image5.jpg" alt="Image 5"></div>
+                <div class="swiper-slide"><img src="image6.jpg" alt="Image 6"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>Search</h2>
+            <input type="text" placeholder="Search..." style="width: 100%; padding: 10px; margin-bottom: 20px;">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Food Distribution</a></li>
+                <li><a href="#">Medical Aid</a></li>
+                <li><a href="#">Education Programs</a></li>
+                <li><a href="#">Community Projects</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="gallery-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image1.jpg" alt="Image 1"></div>
+                        <div class="swiper-slide"><img src="image2.jpg" alt="Image 2"></div>
+                        <div class="swiper-slide"><img src="image3.jpg" alt="Image 3"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="details-bar">
+                    <h4>Food Distribution</h4>
+                    <p>Providing food to those in need.</p>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image4.jpg" alt="Image 4"></div>
+                        <div class="swiper-slide"><img src="image5.jpg" alt="Image 5"></div>
+                        <div class="swiper-slide"><img src="image6.jpg" alt="Image 6"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="details-bar">
+                    <h4>Medical Aid</h4>
+                    <p>Providing medical support and healthcare.</p>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image7.jpg" alt="Image 7"></div>
+                        <div class="swiper-slide"><img src="image8.jpg" alt="Image 8"></div>
+                        <div class="swiper-slide"><img src="image9.jpg" alt="Image 9"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="details-bar">
+                    <h4>Education Programs</h4>
+                    <p>Offering educational opportunities and scholarships.</p>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image10.jpg" alt="Image 10"></div>
+                        <div class="swiper-slide"><img src="image11.jpg" alt="Image 11"></div>
+                        <div class="swiper-slide"><img src="image12.jpg" alt="Image 12"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="details-bar">
+                    <h4>Community Projects</h4>
+                    <p>Developing and supporting community projects.</p>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image13.jpg" alt="Image 13"></div>
+                        <div class="swiper-slide"><img src="image14.jpg" alt="Image 14"></div>
+                        <div class="swiper-slide"><img src="image15.jpg" alt="Image 15"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="details-bar">
+                    <h4>Volunteer Work</h4>
+                    <p>Encouraging community involvement through volunteering.</p>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image16.jpg" alt="Image 16"></div>
+                        <div class="swiper-slide"><img src="image17.jpg" alt="Image 17"></div>
+                        <div class="swiper-slide"><img src="image18.jpg" alt="Image 18"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="details-bar">
+                    <h4>Emergency Relief</h4>
+                    <p>Providing aid in times of disaster and emergency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Charity Organization. All rights reserved.</p>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiperSettings = {
+            loop: true,
+            autoplay: {
+                delay: 12500,
+                disableOnInteraction: false,
+            },
+            speed: 1500,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        };
+
+        const swipers = document.querySelectorAll('.swiper-container');
+        swipers.forEach(container => {
+            new Swiper(container, swiperSettings);
+        });
+    </script>
+</body>
+</html>
