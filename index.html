@@ -96,8 +96,25 @@
             text-align: center;
             padding: 8px 0;
             width: 100%;
-            position: fixed;
+            position: relative;
             bottom: 0;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .gallery-container {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
